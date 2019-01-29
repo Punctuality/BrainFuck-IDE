@@ -7,7 +7,7 @@ Just to fun with ```kotlinlang``` (wordplay, meh) and to help you with your begi
 ## How to use?
 At the start you'll see something like this:
 
-![Startup]("images/startup.png")
+![Startup](images/startup.png)
 
 What can you do next?
 
@@ -16,6 +16,6 @@ What can you do next?
 - You can see output of your program and state of array ("infinite" tape)
 - You can change size of the tape if default 100 is not enough for your *innovational* algorithm
 
-![Work layout]("images/inwork.png")
+![Work layout](images/inwork.png)
 
-![State changing]("images/state_chng.png")
+![State changing](images/state_chng.png)
