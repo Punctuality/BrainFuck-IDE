@@ -1,21 +1,12 @@
 import java.awt.BorderLayout
 import java.awt.FlowLayout
 import java.awt.GridLayout
-import java.awt.event.ActionEvent
-import java.awt.event.ActionListener
 import java.io.File
 import java.io.PrintWriter
 import java.lang.NumberFormatException
 import java.util.*
 import javax.swing.*
 import javax.swing.filechooser.FileNameExtensionFilter
-
-fun main(args: Array<String>){
-    UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName())
-    val mainFrame = BrainFIDE(true, 100)
-    println(mainFrame)
-}
-
 
 class BrainFIDE(visible: Boolean, private var resolution: Int) : JFrame("BrainFuck IDE"){
     private val textField = JTextArea("# Type your code here!", 10, 2)
@@ -188,7 +179,7 @@ class BrainFIDE(visible: Boolean, private var resolution: Int) : JFrame("BrainFu
 
     private fun fileReader(file: File) : String{
         val tempScan = Scanner(file)
-        var out = StringBuilder()
+        val out = StringBuilder()
         while(tempScan.hasNext()){
             out.append(tempScan.nextLine())
         }

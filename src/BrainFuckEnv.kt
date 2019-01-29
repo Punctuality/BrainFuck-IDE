@@ -1,4 +1,3 @@
-import com.sun.javaws.exceptions.InvalidArgumentException
 import java.util.*
 
 class BrainFuckEnv(private val resolution: Int){
